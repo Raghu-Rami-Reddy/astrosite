@@ -222,21 +222,31 @@ const optimizedBackground = await getImage({src: imageWorks, format: 'webp'});
 	</div>
   </section>
 
-    <!-- Google Form -->
-	<section class="bg-gray-100 flex items-center justify-center w-[100vw] h-[100%]">
-		<div class="bg-white p-8 rounded-lg shadow-lg max-w-xl mx-auto">
-			<h1 class="text-6xl font-bold mb-4 text-center">Subscribe</h1>
-			<p class="text-gray-600 mb-6 text-center">Sign up with your email and mobile number to receive the latest updates.</p>
-
-			<div class="mt-6">
-				<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeW7SM4dK3lQkAE4J6h0AzmZ-F5P_M0OLMf7xI8sGrXbncEmw/viewform?embedded=true" 
-				width="100%" height="250"
-				frameborder="0" marginheight="0" 
-				marginwidth="0" class="rounded-full">Loading…
-				</iframe>
+    <!-- formbold Form -->
+	<section class="bg-gray-100 flex items-center justify-center">
+			<div class="bg-white p-6 rounded-lg shadow-md w-full max-w-4xl">
+				<h2 class="text-6xl font-bold text-center mb-8">Subscribe to our Newsletter</h2>
+				<form action="https://formbold.com/s/91pkA" method="POST">
+					<div class="mb-4">
+						<label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email Address:</label>
+						<input 
+							type="email" 
+							id="email" 
+							name="email" 
+							placeholder="Enter your email" 
+							required 
+							class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400"
+						/>
+					</div>
+					<button 
+						type="submit" 
+						class="w-full bg-green-500 text-white font-semibold py-2 rounded-lg hover:bg-green-700 transition-colors duration-300"
+					>
+						Subscribe
+					</button>
+				</form>
 			</div>
-		</div>
-	</section>
+		</section>
 
   <section class="text-center py-12">
 	<h1 class="text-6xl font-bold">Contact Us</h1>
