@@ -1,0 +1,262 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout>
+  <section class="hero bg-cover bg-center " style="background-image: url(/src/images/3.webp);">
+	<div class="h-screen flex items-center justify-center  bg-black/70">
+		<div class="text-center w-[66%]" style="min-width: 50%;">
+			<h1 class="text-7xl md:text-6xl font-bold text-white mt-8 mb-8 px-10 ">Experience Relief with Coroquil-Zn</h1>
+			<p class="text-2xl text-white px-10 mb-8">Boost Your Immunity with Our Innovative Zinc-Based Formula</p>
+			<div class="text-center">
+				<a href="/Discover" class="inline-flex items-center justify-center text-[#645600] bg-[#fff197] rounded-full p-4 text-2xl font-bold hover: cursor-pointer hover:bg-[#f9e356]">Discover COROQUIL-Zn</a>
+			</div>
+		</div>
+	</div>
+  </section>
+  <section class="bg-[#2e481a] flex flex-col items-center justify-center pt-10 mb-10">
+	<div class="ml-10 mr-10 flex flex-col items-center justify-center pb-10" style="max-width: 800px;">
+		<h1 class="text-7xl text-white text-center p-7">Introducing <strong>COROQUIL-Zn</strong></h1>
+		<p class="text-2xl text-white text-center pb-7">
+			At Remedium, we are dedicated to developing innovative health solutions that improve your quality of life. Our latest product, COROQUIL-Zn, is designed to enhance your immune system and provide reliable support for your overall wellness. With a unique blend of zinc and other natural ingredients, COROQUIL-Zn offers an effective approach to maintaining a healthy immune response and promoting overall health.
+		</p>
+		<p class="text-2xl text-white text-center pb-7">
+			Recently approved by the Ayush Administration for use in mild to moderate COVID-19 and other respiratory ailments, COROQUIL-Zn is designed to enhance your immune system and overall wellness.
+		</p>
+	</div>
+  </section>
+  <!-- Slideshow -->
+  <section class="bg-gray-100 flex items-center justify-center min-h-screen">
+	<div class="relative w-full max-w-3xl m-auto overflow-hidden">
+	  <!-- Slideshow Container -->
+	  <div class="slideshow-container relative w-full h-120">
+		<!-- Slide Images -->
+		<div class="mySlides fade hidden">
+		  <img src="src/images/slide1.webp" class="w-full h-full object-cover">
+		</div>
+		<div class="mySlides fade hidden">
+		  <img src="src/images/slide2.webp" class="w-full h-full object-cover">
+		</div>
+		<div class="mySlides fade hidden">
+		  <img src="src/images/slide3.webp" class="w-full h-full object-cover">
+		</div>
+		<div class="mySlides fade hidden">
+		  <img src="src/images/slide4.webp" class="w-full h-full object-cover">
+		</div>
+		<div class="mySlides fade hidden">
+		  <img src="src/images/slide5.webp" class="w-full h-full object-cover">
+		</div>
+	  </div>
+	
+	  <!-- Navigation Buttons -->
+	  <a class="prev absolute left-0 top-1/2 transform -translate-y-1/2 text-2xl text-white cursor-pointer">❮</a>
+	  <a class="next absolute right-0 top-1/2 transform -translate-y-1/2 text-2xl text-white cursor-pointer">❯</a>
+	</div>
+  
+	<!-- Add Slideshow Script -->
+	<script>
+	  let slideIndex = 0;
+	  showSlides();
+  
+	  function showSlides() {
+		const slides = document.querySelectorAll('.mySlides');
+		slides.forEach(slide => slide.classList.add('hidden'));
+		slideIndex++;
+		if (slideIndex > slides.length) slideIndex = 1;
+		slides[slideIndex - 1].classList.remove('hidden');
+		setTimeout(showSlides, 4000); // Change image every 4 seconds
+	  }
+	</script>
+  </section>
+  <section class="pt-10 pb-10 flex justify-center">
+  	<div class="bg-[#393193] rounded-3xl" style="max-width: 85%;">
+		<div class="m-5 pt-8 pb-8 flex flex-col text-left">
+			<h1 class="text-[#FFD7EF] text-7xl font-bold">What is COROQUIL-Zn?</h1>
+			<p class="pt-4 text-[#FFD7EF] text-2xl">
+				COROQUIL-Zn is a cutting-edge zinc-based supplement developed by Remedium to support your immune health. Our product combines the benefits of zinc with a proprietary blend of natural ingredients to help your body fend off illnesses and maintain optimal health. Zinc is an essential mineral known for its immune-boosting properties, and in COROQUIL-Zn, we've harnessed its power to deliver maximum effectiveness. 
+			</p>
+			<p class="pt-4 text-[#FFD7EF] text-2xl">
+				Crafted with high-quality, natural components, COROQUIL-Zn is designed to be a safe, effective, and easy addition to your daily wellness routine. Each ingredient is carefully selected to provide comprehensive immune support and help you stay healthy and vibrant.
+			</p>
+			<p class="pt-4 text-[#FFD7EF] text-2xl">
+				Crafted with high-quality, natural components, COROQUIL-Zn is designed to be a safe, effective, and easy addition to your daily wellness routine. By taking two capsules a day, you can maintain strong immune support and promote overall health. Each ingredient is carefully selected to provide comprehensive immune support and help you stay healthy and vibrant.
+			</p>
+		</div>
+	</div>
+  </section>
+  <section class="bg-[#2E481A] flex flex-col items-center justify-center w-[100%] pt-20 pb-20 mb-20">
+		<div class="bg-[#9FE870] w-[90%] rounded-3xl flex items-center justify-center p-12 " style="max-width: 80%;">
+			<p class="text-[#2E481A] text-6xl font-bold text-center m-15">
+				Approved by Ministry of Ayush, Govt. of India for adjuvant treatment of COVID-19 
+			</p>
+		</div>
+  </section>
+
+  <section class=" ">
+	<div class="text-center mb-10">
+		<h1 class="text-6xl pb-5"><strong>How COROQUIL-Zn Works</strong></h1>
+		<p class="text-2xl">
+			COROQUIL-Zn works by leveraging the power of zinc and other natural ingredients to support and strengthen your immune system. Here's how our formula helps: 
+		</p>
+	</div>
+	<div class="inline-flex flex-row justify-center flex-nowrap">
+		<div class=" flex flex-col">
+			<div class="m-10 bg-white rounded-3xl p-3">
+				<h2 class="text-4xl font-bold">Boosts Immune Defense</h2>
+				<p class="text-2xl">Zinc plays a vital role in maintaining immune function, helping your body fight off pathogens and reduce the duration of illnesses. </p>
+			</div>
+			<div class="m-10 bg-white rounded-3xl p-3">
+				<h2 class="text-4xl font-bold">Supports Respiratory Health</h2>
+				<p class="text-2xl"> The natural ingredients in COROQUIL-Zn are carefully chosen to support respiratory health and enhance your body's natural defenses. </p>
+			</div>
+			<div class="m-10 bg-white rounded-3xl p-3">
+				<h2 class="text-4xl font-bold">Promotes Overall Wellness</h2>
+				<p class="text-2xl">By supporting your immune system, COROQUIL-Zn contributes to your overall health, helping you feel your best every day. </p>
+			</div>	
+		</div>
+		<div class="m-10">
+			<img class="rounded-3xl" src="/src/images/3.webp" alt="COROQUIL-Zn">
+		</div>
+	</div>
+  </section>
+  <section class="mb-10">
+	<div class="text-center">
+		<h1 class="text-6xl font-bold p-2">Why Choose COROQUIL-Zn?</h1>
+		<p class="text-2xl p-2">
+			Here’s why COROQUIL-Zn by Remedium is the right choice for your immune health:
+		</p>
+	</div>
+	<div class="max-w-4xl mx-auto p-6 bg-white rounded-2xl shadow-md">
+        <ul class="space-y-4 text-gray-800 items-center">
+            <li class="flex items-start space-x-4">
+                <span class="font-bold text-green-500 text-xl">1</span>
+                <div class="text-2xl">
+                    <strong class="font-bold">Potent Zinc Formula:</strong> Formulated with a high concentration of zinc, a crucial mineral for immune support.
+                </div>
+            </li>
+            <li class="flex items-start space-x-4">
+                <span class="font-bold text-green-500 text-xl">2</span>
+                <div class="text-2xl">
+                    <strong class="font-bold">Natural Ingredients:</strong> Includes a proprietary blend of natural herbs and nutrients known for their health benefits.
+                </div>
+            </li>
+            <li class="flex items-start space-x-4">
+                <span class="font-bold text-green-500 text-xl">3</span>
+                <div class="text-2xl">
+                    <strong class="font-bold">Clinically Tested:</strong> Our formula is backed by scientific research and clinical trials, ensuring efficacy and safety.
+                </div>
+            </li>
+            <li class="flex items-start space-x-4">
+                <span class="font-bold text-green-500 text-xl">4</span>
+                <div class="text-2xl">
+                    <strong class="font-bold">Easy to Take:</strong> Convenient, easy-to-swallow capsules designed for daily use.
+                </div>
+            </li>
+            <li class="flex items-start space-x-4">
+                <span class="font-bold text-green-500 text-xl">5</span>
+                <div class="text-2xl">
+                    <strong class="font-bold">Trusted by Health Professionals:</strong> Recommended by doctors and healthcare providers for immune support.
+                </div>
+            </li>
+        </ul>
+    </div>
+	</div>
+  </section>
+  <section class="mb-10">
+	<div class="text-center">
+		<h1 class="text-6xl font-bold mb-5">Where to Buy COROQUIL-Zn</h1>
+		<p class="text-2xl">
+			You can purchase COROQUIL-Zn directly from our online store or find it at any of our authorized retail partners. Available in pharmacies, health stores, and online retailers, COROQUIL-Zn is easily accessible wherever you are. Take the first step towards stronger immune health today!
+		</p>
+	</div>
+	<div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+		<!-- Netmeds -->
+		<div class="bg-[#C1FF71] rounded-2xl p-8 text-center">
+			<img src="/src/images/1.webp" alt="Netmeds Logo" class="mx-auto mb-4">
+			<a href="#" class="bg-lime-500 text-white px-6 py-3 rounded-full hover:bg-[#aefc48]  hover:drop-shadow-md ">Visit Netmeds</a>
+		</div>
+
+		<!-- Tata 1MG -->
+		<div class="bg-[#C1FF71] rounded-2xl p-8 text-center">
+			<img src="/src/images/3-1.webp" alt="Tata 1MG Logo" class="mx-auto mb-4">
+			<a href="#" class="bg-lime-500 text-white px-6 py-3 rounded-full hover:bg-[#aefc48]  hover:drop-shadow-md">Visit 1MG</a>
+		</div>
+
+		<!-- Remedium -->
+		<div class="bg-[#C1FF71] rounded-2xl p-8 text-center">
+			<img src="/src/images/untitled-design-1.webp" alt="Remedium Logo" class="mx-auto mb-4">
+			<a href="#" class="bg-lime-500 text-white px-6 py-3 rounded-full hover:bg-[#aefc48] hover:drop-shadow-md">Visit Store</a>
+		</div>
+	</div>
+  </section>
+  <section class=" bg-white mb-10">
+	<div class="mx-10">
+	<h1 class="text-6xl text-center font-bold py-5">Press Coverage</h1>
+	<div class="inline-flex items-center justify-center flex-wrap w-[100%] m-4 p-2">
+		<img src="/src/images/business-standard.webp">
+		<img src="/src/images/cnbc.webp">
+		<img src="/src/images/forbes-india.webp">
+		<img src="/src/images/health-world.webp">
+		<img src="/src/images/inc-42-footer-logo-1.webp">
+		<img src="/src/images/live-mint.webp">
+	</div>
+	</div>
+  </section>
+
+    <!-- Google Form -->
+	<section class="bg-gray-100 flex items-center justify-center w-[100vw] h-[100%]">
+		<div class="bg-white p-8 rounded-lg shadow-lg max-w-xl mx-auto">
+			<h1 class="text-6xl font-bold mb-4 text-center">Subscribe</h1>
+			<p class="text-gray-600 mb-6 text-center">Sign up with your email and mobile number to receive the latest updates.</p>
+
+			<div class="mt-6">
+				<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeW7SM4dK3lQkAE4J6h0AzmZ-F5P_M0OLMf7xI8sGrXbncEmw/viewform?embedded=true" 
+				width="100%" height="250"
+				frameborder="0" marginheight="0" 
+				marginwidth="0" class="rounded-full">Loading…
+				</iframe>
+			</div>
+		</div>
+	</section>
+
+  <section class="text-center py-12">
+	<h1 class="text-6xl font-bold">Contact Us</h1>
+	<div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+		<!-- Phone -->
+		<div class="bg-white rounded-3xl p-6 shadow-md">
+			<h2 class="font-bold text-xl">Phone</h2>
+			<p class="text-green-500 mt-2">+91 73583 14777</p>
+		</div>
+
+		<!-- Email -->
+		<div class="bg-white rounded-3xl p-6 shadow-md">
+			<h2 class="font-bold text-xl">Email</h2>
+			<p class="text-green-500 mt-2">info@remediumtherapeutics.com</p>
+		</div>
+
+		<!-- Address -->
+		<div class="bg-white rounded-3xl p-6 shadow-md">
+			<h2 class="font-bold text-xl">Address</h2>
+			<p class="mt-2">
+				Remedium Therapeutics Private Limited<br>
+				Ticel Biopark Ltd Phase 2, First Floor<br>
+				5, CSIR Main Road,<br>
+				Taramani, Chennai – 600113
+			</p>
+		</div>
+
+		<!-- Working Hours -->
+		<div class="bg-white rounded-3xl p-6 shadow-md">
+			<h2 class="font-bold text-xl">Working Hours</h2>
+			<p>Mon 9:00 - 18:00</p>
+			<p>Tue 9:00 - 18:00</p>
+			<p>Wed 9:00 - 18:00</p>
+			<p>Thu 9:00 - 18:00</p>
+			<p>Fri 9:00 - 18:00</p>
+			<p>Sat 9:00 - 18:00</p>
+			<p>Sun 9:00 - 18:00</p>
+		</div>
+	</div>
+  </section>
+
+
+</Layout>

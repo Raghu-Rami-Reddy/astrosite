@@ -1,0 +1,32 @@
+---
+export const prerender = true;
+---
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coroquil-Zn</title>
+    <link rel="stylesheet" href="/dist/tailwind.css">
+  </head>
+  <body class="bg-[#EDEFEB]">
+    <header class=" flex justify-center" >
+        <nav class="bg-white/65 p-7 mt-5 text-white  h-[90px] w-full rounded-full fixed drop-shadow-2xl border-stone-500 z-50" style="color: #320707; font-size: 1.5rem; max-width: 1320px;">
+            <ul class="flex flex-row items-center justify-between font-bold ">
+                <li>
+                    <h1>Coroquil-Zn</h1>
+                </li>
+                <li>
+                    <a href="/shop" class="bg-[#bcef9c] text-[#264d0c] rounded-3xl p-3 hover:bg-[#a2ed6f] ">Shop Now</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer class="bg-[#2E481A] p-4 text-center text-white">
+      <p> © Copyright 2024 Remedium Therapeutics- All Rights Reserved </p>
+    </footer>
+  </body>
+</html>
