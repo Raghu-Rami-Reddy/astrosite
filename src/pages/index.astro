@@ -1,8 +1,28 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import { getImage } from 'astro:assets';
+import slide1 from './../images/slide1.webp';
+import slide2 from '../images/slide2.webp';
+import slide3 from '../images/slide3.webp';
+import slide4 from '../images/slide4.webp';
+import slide5 from '../images/slide5.webp';
+import imageWorks from '../images/3.webp';
+import business from '../images/business-standard.webp';
+import forbes from '../images/forbes-india.webp';
+import cnbc from '../images/cnbc.webp';
+import health from '../images/health-world.webp';
+import inc from '../images/inc-42-footer-logo-1.webp';
+import live from '../images/live-mint.webp';
+import netmed from '../images/1.webp';
+import tata from '../images/3-1.webp';
+import untitled from '../images/untitled-design-1.webp';
+const optimizedBackground = await getImage({src: imageWorks, format: 'webp'});
+
 ---
+
 <Layout>
-  <section class="hero bg-cover bg-center " style="background-image: url(/src/images/3.webp);">
+  <section class="hero bg-cover bg-center " style={`background-image: url(${optimizedBackground.src});`}>
 	<div class="h-screen flex items-center justify-center  bg-black/70">
 		<div class="text-center w-[66%]" style="min-width: 50%;">
 			<h1 class="text-7xl md:text-6xl font-bold text-white mt-8 mb-8 px-10 ">Experience Relief with Coroquil-Zn</h1>
@@ -25,25 +45,25 @@ import Layout from '../layouts/Layout.astro';
 	</div>
   </section>
   <!-- Slideshow -->
-  <section class="bg-gray-100 flex items-center justify-center min-h-screen">
+  <section class="bg-gray-100 flex items-center justify-center ">
 	<div class="relative w-full max-w-3xl m-auto overflow-hidden">
 	  <!-- Slideshow Container -->
 	  <div class="slideshow-container relative w-full h-120">
 		<!-- Slide Images -->
 		<div class="mySlides fade hidden">
-		  <img src="src/images/slide1.webp" class="w-full h-full object-cover">
+		  <Image src={slide1} alt="A description of pruduct1." class="w-full h-full object-cover" />
 		</div>
 		<div class="mySlides fade hidden">
-		  <img src="src/images/slide2.webp" class="w-full h-full object-cover">
+		  <Image src={slide2} alt="A description of product2." class="w-full h-full object-cover" />
 		</div>
 		<div class="mySlides fade hidden">
-		  <img src="src/images/slide3.webp" class="w-full h-full object-cover">
+		  <Image src={slide3} alt="A description of product3." class="w-full h-full object-cover" />
 		</div>
 		<div class="mySlides fade hidden">
-		  <img src="src/images/slide4.webp" class="w-full h-full object-cover">
+		  <Image src={slide4} alt="A description of  product4." class="w-full h-full object-cover" />
 		</div>
 		<div class="mySlides fade hidden">
-		  <img src="src/images/slide5.webp" class="w-full h-full object-cover">
+		  <Image src={slide5} alt="A description of product5." class="w-full h-full object-cover" />
 		</div>
 	  </div>
 	
@@ -114,7 +134,7 @@ import Layout from '../layouts/Layout.astro';
 			</div>	
 		</div>
 		<div class="m-10">
-			<img class="rounded-3xl" src="/src/images/3.webp" alt="COROQUIL-Zn">
+			<Image class="rounded-3xl" src={imageWorks} alt="COROQUIL-Zn" />
 		</div>
 	</div>
   </section>
@@ -171,19 +191,19 @@ import Layout from '../layouts/Layout.astro';
 	<div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
 		<!-- Netmeds -->
 		<div class="bg-[#C1FF71] rounded-2xl p-8 text-center">
-			<img src="/src/images/1.webp" alt="Netmeds Logo" class="mx-auto mb-4">
+			<Image src={netmed} alt="Netmeds Logo" class="mx-auto mb-4" />
 			<a href="#" class="bg-lime-500 text-white px-6 py-3 rounded-full hover:bg-[#aefc48]  hover:drop-shadow-md ">Visit Netmeds</a>
 		</div>
 
 		<!-- Tata 1MG -->
 		<div class="bg-[#C1FF71] rounded-2xl p-8 text-center">
-			<img src="/src/images/3-1.webp" alt="Tata 1MG Logo" class="mx-auto mb-4">
+			<Image src={tata} alt="Tata 1MG Logo" class="mx-auto mb-4" />
 			<a href="#" class="bg-lime-500 text-white px-6 py-3 rounded-full hover:bg-[#aefc48]  hover:drop-shadow-md">Visit 1MG</a>
 		</div>
 
 		<!-- Remedium -->
 		<div class="bg-[#C1FF71] rounded-2xl p-8 text-center">
-			<img src="/src/images/untitled-design-1.webp" alt="Remedium Logo" class="mx-auto mb-4">
+			<Image src={untitled} alt="Remedium Logo" class="mx-auto mb-4" />
 			<a href="#" class="bg-lime-500 text-white px-6 py-3 rounded-full hover:bg-[#aefc48] hover:drop-shadow-md">Visit Store</a>
 		</div>
 	</div>
@@ -192,12 +212,12 @@ import Layout from '../layouts/Layout.astro';
 	<div class="mx-10">
 	<h1 class="text-6xl text-center font-bold py-5">Press Coverage</h1>
 	<div class="inline-flex items-center justify-center flex-wrap w-[100%] m-4 p-2">
-		<img src="/src/images/business-standard.webp">
-		<img src="/src/images/cnbc.webp">
-		<img src="/src/images/forbes-india.webp">
-		<img src="/src/images/health-world.webp">
-		<img src="/src/images/inc-42-footer-logo-1.webp">
-		<img src="/src/images/live-mint.webp">
+		<Image src={business} alt="bsLogo" class="m-4"/>
+		<Image src={cnbc} alt="bsLogo" class="m-4"/>
+		<Image src={forbes} alt="bsLogo" class="m-4"/>
+		<Image src={health} alt="bsLogo" class="m-4"/>
+		<Image src={inc} alt="bsLogo" class="m-4"/>
+		<Image src={live} alt="bsLogo" class="m-4"/>
 	</div>
 	</div>
   </section>
