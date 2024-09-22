@@ -6,26 +6,30 @@ export const prerender = true;
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coroquil-Zn</title>
-    <link rel="stylesheet" href="/dist/tailwind.css">
+    <meta name="description" content="Experience Relief with Coroquil-Zn | Boost Your Immunity with Our Innovative Zinc-Based Formula">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
-  <body class="bg-[#EDEFEB]">
-    <header class=" flex justify-center" >
-        <nav class="bg-white/65 p-7 mt-5 text-white  h-[90px] w-full rounded-full fixed drop-shadow-2xl border-stone-500 z-50" style="color: #320707; font-size: 1.5rem; max-width: 1320px;">
-            <ul class="flex flex-row items-center justify-between font-bold ">
+  <body class="bg-[#EDEFEB]" style="font-family: Inter Tight, Open Sans, sans-serif;">
+    <header class=" flex justify-center w-screen" >
+        <nav class="flex items-center bg-white/65 m-2 md:mt-4 text-white  md:h-[90px] w-full mx-4 rounded-full fixed drop-shadow-2xl border-stone-500 z-50" style="color: #320707; max-width: 1320px;">
+            <ul class="flex justify-between w-full font-bold text-lg md:text-2xl p-4 md:px-8">
                 <li>
                     <h1>Coroquil-Zn</h1>
                 </li>
                 <li>
-                    <a href="/shop" class="bg-[#bcef9c] text-[#264d0c] rounded-3xl p-3 hover:bg-[#a2ed6f] ">Shop Now</a>
+                    <a href="/shop" class="bg-[#FFF197] text-[#645600] rounded-full p-2 text-lg font-bold border-solid border-2 border-yellow-500">Shop Now</a>
                 </li>
             </ul>
         </nav>
 
     </header>
-    <main>
-      <slot />
+    <main >
+      <slot class="w-screen"/>
     </main>
-    <footer class="bg-[#2E481A] p-4 text-center text-white">
+    <footer class="bg-[#2E481A] p-4 text-center text-white text-lg md:text-2xl">
       <p> © Copyright 2024 Remedium Therapeutics- All Rights Reserved </p>
     </footer>
   </body>
