@@ -17,29 +17,28 @@ import live from '../images/live-mint.webp';
 import netmed from '../images/1.webp';
 import tata from '../images/3-1.webp';
 import untitled from '../images/untitled-design-1.webp';
-const optimizedBackground = await getImage({src: imageWorks, format: 'webp'});
+
+const optimizedBackground = await getImage({src: imageWorks, format: 'webp', quality: 10});
 
 ---
 
 <Layout>
   <section class="hero bg-cover bg-center " style={`background-image: url(${optimizedBackground.src});`}>
 	<div class="h-screen flex items-center justify-center  bg-black/70">
-		<div class="text-center w-[66%]" style="min-width: 50%;">
-			<h1 class="text-7xl md:text-6xl font-bold text-white mt-8 mb-8 px-10 ">Experience Relief with Coroquil-Zn</h1>
-			<p class="text-2xl text-white px-10 mb-8">Boost Your Immunity with Our Innovative Zinc-Based Formula</p>
-			<div class="text-center">
-				<a href="/Discover" class="inline-flex items-center justify-center text-[#645600] bg-[#fff197] rounded-full p-4 text-2xl font-bold hover: cursor-pointer hover:bg-[#f9e356]">Discover COROQUIL-Zn</a>
-			</div>
+		<div class="text-center md:w-[66%]" style="min-width: 50%;">
+			<h1 class="text-5xl md:text-7xl font-bold text-white mt-8 mb-8 px-10 ">Experience Relief with Coroquil-Zn</h1>
+			<p class="text-lg md:text-2xl text-white px-10 mb-8">Boost Your Immunity with Our Innovative Zinc-Based Formula</p>
+			<a href="/Discover" class="inline-flex items-center justify-center text-[#645600] bg-[#FFF197] rounded-full p-3 text-lg md:text-2xl font-bold border-solid border-2 border-yellow-500 hover: cursor-pointer ">Discover COROQUIL-Zn</a>
 		</div>
 	</div>
   </section>
   <section class="bg-[#2e481a] flex flex-col items-center justify-center pt-10 mb-10">
-	<div class="ml-10 mr-10 flex flex-col items-center justify-center pb-10" style="max-width: 800px;">
-		<h1 class="text-7xl text-white text-center p-7">Introducing <strong>COROQUIL-Zn</strong></h1>
-		<p class="text-2xl text-white text-center pb-7">
+	<div class="mx-5 md:mx-10 flex flex-col items-center justify-center pb-10" style="max-width: 800px;">
+		<h1 class=" text-white text-center px-auto py-7 md:text-7xl" style="font-size: 2.625rem;">Introducing <strong class="relative">COROQUIL-Zn</strong></h1>
+		<p class="text-lg md:text-2xl text-white text-center pb-7">
 			At Remedium, we are dedicated to developing innovative health solutions that improve your quality of life. Our latest product, COROQUIL-Zn, is designed to enhance your immune system and provide reliable support for your overall wellness. With a unique blend of zinc and other natural ingredients, COROQUIL-Zn offers an effective approach to maintaining a healthy immune response and promoting overall health.
 		</p>
-		<p class="text-2xl text-white text-center pb-7">
+		<p class="text-lg md:text-2xl text-white text-center pb-7">
 			Recently approved by the Ayush Administration for use in mild to moderate COVID-19 and other respiratory ailments, COROQUIL-Zn is designed to enhance your immune system and overall wellness.
 		</p>
 	</div>
@@ -51,19 +50,19 @@ const optimizedBackground = await getImage({src: imageWorks, format: 'webp'});
 	  <div class="slideshow-container relative w-full h-120">
 		<!-- Slide Images -->
 		<div class="mySlides fade hidden">
-		  <Image src={slide1} alt="A description of pruduct1." class="w-full h-full object-cover" />
+		  <Image src={slide1} quality={85} alt="A description of pruduct1." class="w-full h-full object-cover" />
 		</div>
 		<div class="mySlides fade hidden">
-		  <Image src={slide2} alt="A description of product2." class="w-full h-full object-cover" />
+		  <Image src={slide2} quality={85} alt="A description of product2." class="w-full h-full object-cover" />
 		</div>
 		<div class="mySlides fade hidden">
-		  <Image src={slide3} alt="A description of product3." class="w-full h-full object-cover" />
+		  <Image src={slide3} quality={85} alt="A description of product3." class="w-full h-full object-cover" />
 		</div>
 		<div class="mySlides fade hidden">
-		  <Image src={slide4} alt="A description of  product4." class="w-full h-full object-cover" />
+		  <Image src={slide4} quality={85} alt="A description of  product4." class="w-full h-full object-cover" />
 		</div>
 		<div class="mySlides fade hidden">
-		  <Image src={slide5} alt="A description of product5." class="w-full h-full object-cover" />
+		  <Image src={slide5} quality={85} alt="A description of product5." class="w-full h-full object-cover" />
 		</div>
 	  </div>
 	
@@ -87,130 +86,133 @@ const optimizedBackground = await getImage({src: imageWorks, format: 'webp'});
 	  }
 	</script>
   </section>
-  <section class="pt-10 pb-10 flex justify-center">
-  	<div class="bg-[#393193] rounded-3xl" style="max-width: 85%;">
-		<div class="m-5 pt-8 pb-8 flex flex-col text-left">
-			<h1 class="text-[#FFD7EF] text-7xl font-bold">What is COROQUIL-Zn?</h1>
-			<p class="pt-4 text-[#FFD7EF] text-2xl">
+  <section class="py-5 md:py-10 flex justify-center">
+  	<div class="bg-[#393193] rounded-3xl px-4 mx-5 md:mx-36">
+		<div class="mx-5 py-5 md:pt-8 md:pb-8 flex flex-col text-left">
+			<h1 class="text-[#FFD7EF] text-4xl md:text-6xl font-bold pb-5">What is COROQUIL-Zn?</h1>
+			<p class="pt-4 text-[#FFD7EF] text-lg md:text-2xl">
 				COROQUIL-Zn is a cutting-edge zinc-based supplement developed by Remedium to support your immune health. Our product combines the benefits of zinc with a proprietary blend of natural ingredients to help your body fend off illnesses and maintain optimal health. Zinc is an essential mineral known for its immune-boosting properties, and in COROQUIL-Zn, we've harnessed its power to deliver maximum effectiveness. 
 			</p>
-			<p class="pt-4 text-[#FFD7EF] text-2xl">
+			<p class="pt-4 text-[#FFD7EF] text-lg md:text-2xl">
 				Crafted with high-quality, natural components, COROQUIL-Zn is designed to be a safe, effective, and easy addition to your daily wellness routine. Each ingredient is carefully selected to provide comprehensive immune support and help you stay healthy and vibrant.
 			</p>
-			<p class="pt-4 text-[#FFD7EF] text-2xl">
+			<p class="pt-4 text-[#FFD7EF] text-lg md:text-2xl">
 				Crafted with high-quality, natural components, COROQUIL-Zn is designed to be a safe, effective, and easy addition to your daily wellness routine. By taking two capsules a day, you can maintain strong immune support and promote overall health. Each ingredient is carefully selected to provide comprehensive immune support and help you stay healthy and vibrant.
 			</p>
 		</div>
 	</div>
   </section>
-  <section class="bg-[#2E481A] flex flex-col items-center justify-center w-[100%] pt-20 pb-20 mb-20">
-		<div class="bg-[#9FE870] w-[90%] rounded-3xl flex items-center justify-center p-12 " style="max-width: 80%;">
-			<p class="text-[#2E481A] text-6xl font-bold text-center m-15">
+  <section class="bg-[#2E481A] flex flex-col items-center justify-center w-[100%] pt-20 pb-20 my-20">
+		<div class="bg-[#9FE870] w-[90%] rounded-3xl flex items-center justify-center p-8 md:p-24 " style="max-width: 90%;">
+			<p class="text-[#2E481A] text-4xl md:text-6xl font-bold text-center m-15">
 				Approved by Ministry of Ayush, Govt. of India for adjuvant treatment of COVID-19 
 			</p>
 		</div>
   </section>
 
-  <section class=" ">
-	<div class="text-center mb-10">
-		<h1 class="text-6xl pb-5"><strong>How COROQUIL-Zn Works</strong></h1>
-		<p class="text-2xl">
-			COROQUIL-Zn works by leveraging the power of zinc and other natural ingredients to support and strengthen your immune system. Here's how our formula helps: 
-		</p>
-	</div>
-	<div class="inline-flex flex-row justify-center flex-nowrap">
-		<div class=" flex flex-col">
-			<div class="m-10 bg-white rounded-3xl p-3">
-				<h2 class="text-4xl font-bold">Boosts Immune Defense</h2>
-				<p class="text-2xl">Zinc plays a vital role in maintaining immune function, helping your body fight off pathogens and reduce the duration of illnesses. </p>
-			</div>
-			<div class="m-10 bg-white rounded-3xl p-3">
-				<h2 class="text-4xl font-bold">Supports Respiratory Health</h2>
-				<p class="text-2xl"> The natural ingredients in COROQUIL-Zn are carefully chosen to support respiratory health and enhance your body's natural defenses. </p>
-			</div>
-			<div class="m-10 bg-white rounded-3xl p-3">
-				<h2 class="text-4xl font-bold">Promotes Overall Wellness</h2>
-				<p class="text-2xl">By supporting your immune system, COROQUIL-Zn contributes to your overall health, helping you feel your best every day. </p>
-			</div>	
+  <section class="w-full">
+	<div class="md:mx-10">
+		<div class="text-center mb-10">
+			<h1 class="text-4xl md:text-6xl pb-5"><strong>How COROQUIL-Zn Works</strong></h1>
+			<p class="text-lg md:text-2xl mx-5 md:mx-1">
+				COROQUIL-Zn works by leveraging the power of zinc and other natural ingredients to support and strengthen your immune system. Here's how our formula helps: 
+			</p>
 		</div>
-		<div class="m-10">
-			<Image class="rounded-3xl" src={imageWorks} alt="COROQUIL-Zn" />
+		<div class="flex flex-row justify-center flex-wrap md:flex-nowrap">
+			<div class=" flex flex-col">
+				<div class="mx-5 md:my-4 md:p-8 bg-white rounded-3xl p-3">
+					<h2 class="text-2xl md:text-3xl font-bold">Boosts Immune Defense</h2>
+					<p class="text-lg md:text-2xl">Zinc plays a vital role in maintaining immune function, helping your body fight off pathogens and reduce the duration of illnesses. </p>
+				</div>
+				<div class="mx-5 my-4 md:my-4 md:p-8 bg-white rounded-3xl p-3">
+					<h2 class="text-2xl md:text-3xl font-bold">Supports Respiratory Health</h2>
+					<p class="text-lg md:text-2xl"> The natural ingredients in COROQUIL-Zn are carefully chosen to support respiratory health and enhance your body's natural defenses. </p>
+				</div>
+				<div class="mx-5 md:my-4 md:p-8 bg-white rounded-3xl p-3">
+					<h2 class="text-2xl md:text-3xl font-bold">Promotes Overall Wellness</h2>
+					<p class="text-lg md:text-2xl">By supporting your immune system, COROQUIL-Zn contributes to your overall health, helping you feel your best every day. </p>
+				</div>	
+			</div>
+			<div class="m-5 flex">
+				<Image class="rounded-3xl min-w-80 min-h-80 md:max-w-xl" src={imageWorks} quality={35} alt="COROQUIL-Zn" />
+			</div>
 		</div>
 	</div>
   </section>
   <section class="mb-10">
-	<div class="text-center">
-		<h1 class="text-6xl font-bold p-2">Why Choose COROQUIL-Zn?</h1>
-		<p class="text-2xl p-2">
-			Here’s why COROQUIL-Zn by Remedium is the right choice for your immune health:
-		</p>
-	</div>
-	<div class="max-w-4xl mx-auto p-6 bg-white rounded-2xl shadow-md">
-        <ul class="space-y-4 text-gray-800 items-center">
-            <li class="flex items-start space-x-4">
-                <span class="font-bold text-green-500 text-xl">1</span>
-                <div class="text-2xl">
-                    <strong class="font-bold">Potent Zinc Formula:</strong> Formulated with a high concentration of zinc, a crucial mineral for immune support.
-                </div>
-            </li>
-            <li class="flex items-start space-x-4">
-                <span class="font-bold text-green-500 text-xl">2</span>
-                <div class="text-2xl">
-                    <strong class="font-bold">Natural Ingredients:</strong> Includes a proprietary blend of natural herbs and nutrients known for their health benefits.
-                </div>
-            </li>
-            <li class="flex items-start space-x-4">
-                <span class="font-bold text-green-500 text-xl">3</span>
-                <div class="text-2xl">
-                    <strong class="font-bold">Clinically Tested:</strong> Our formula is backed by scientific research and clinical trials, ensuring efficacy and safety.
-                </div>
-            </li>
-            <li class="flex items-start space-x-4">
-                <span class="font-bold text-green-500 text-xl">4</span>
-                <div class="text-2xl">
-                    <strong class="font-bold">Easy to Take:</strong> Convenient, easy-to-swallow capsules designed for daily use.
-                </div>
-            </li>
-            <li class="flex items-start space-x-4">
-                <span class="font-bold text-green-500 text-xl">5</span>
-                <div class="text-2xl">
-                    <strong class="font-bold">Trusted by Health Professionals:</strong> Recommended by doctors and healthcare providers for immune support.
-                </div>
-            </li>
-        </ul>
-    </div>
+	<div class="md:flex md:flex-row md:m-10">
+		<div class="text-left mx-4">
+			<h1 class="text-4xl md:text-6xl font-bold p-2">Why Choose COROQUIL-Zn?</h1>
+			<p class="text-lg md:text-2xl p-2">
+				Here’s why COROQUIL-Zn by Remedium is the right choice for your immune health:
+			</p>
+		</div>
+		<div class="max-w-4xl mx-5 p-6 bg-white rounded-2xl shadow-md">
+			<ul class="space-y-4 text-gray-800 items-center">
+				<li class="flex items-start space-x-4">
+					<span class="font-bold text-green-500 text-lg">1</span>
+					<div class="text-lg md:text-2xl">
+						<strong>Potent Zinc Formula:</strong> Formulated with a high concentration of zinc, a crucial mineral for immune support.
+					</div>
+				</li>
+				<li class="flex items-start space-x-4">
+					<span class="font-bold text-green-500 text-lg">2</span>
+					<div class="text-lg md:text-2xl">
+						<strong>Natural Ingredients:</strong> Includes a proprietary blend of natural herbs and nutrients known for their health benefits.
+					</div>
+				</li>
+				<li class="flex items-start space-x-4">
+					<span class="font-bold text-green-500 text-lg">3</span>
+					<div class="text-lg md:text-2xl">
+						<strong>Clinically Tested:</strong> Our formula is backed by scientific research and clinical trials, ensuring efficacy and safety.
+					</div>
+				</li>
+				<li class="flex items-start space-x-4">
+					<span class="font-bold text-green-500 text-lg">4</span>
+					<div class="text-lg md:text-2xl">
+						<strong>Easy to Take:</strong> Convenient, easy-to-swallow capsules designed for daily use.
+					</div>
+				</li>
+				<li class="flex items-start space-x-4">
+					<span class="font-bold text-green-500 text-lg">5</span>
+					<div class="text-lg md:text-2xl">
+						<strong>Trusted by Health Professionals:</strong> Recommended by doctors and healthcare providers for immune support.
+					</div>
+				</li>
+			</ul>
+		</div>
 	</div>
   </section>
-  <section class="mb-10">
-	<div class="text-center">
-		<h1 class="text-6xl font-bold mb-5">Where to Buy COROQUIL-Zn</h1>
-		<p class="text-2xl">
+  <section class="my-10">
+	<div class="text-center mx-5 md:mx-36">
+		<h1 class="text-4xl md:text-6xl font-bold mb-5">Where to Buy COROQUIL-Zn</h1>
+		<p class="text-lg md:text-2xl">
 			You can purchase COROQUIL-Zn directly from our online store or find it at any of our authorized retail partners. Available in pharmacies, health stores, and online retailers, COROQUIL-Zn is easily accessible wherever you are. Take the first step towards stronger immune health today!
 		</p>
 	</div>
-	<div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+	<div class="mt-8 mx-5 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl md:max-w-full ">
 		<!-- Netmeds -->
 		<div class="bg-[#C1FF71] rounded-2xl p-8 text-center">
-			<Image src={netmed} alt="Netmeds Logo" class="mx-auto mb-4" />
-			<a href="#" class="bg-lime-500 text-white px-6 py-3 rounded-full hover:bg-[#aefc48]  hover:drop-shadow-md ">Visit Netmeds</a>
+			<Image src={netmed} alt="Netmeds Logo" class="mx-auto" />
+			<a href="/netmeds" class="bg-lime-500 text-white px-6 py-3 rounded-full hover:bg-[#aefc48]  hover:drop-shadow-md md:text-2xl">Visit Netmeds</a>
 		</div>
 
 		<!-- Tata 1MG -->
 		<div class="bg-[#C1FF71] rounded-2xl p-8 text-center">
 			<Image src={tata} alt="Tata 1MG Logo" class="mx-auto mb-4" />
-			<a href="#" class="bg-lime-500 text-white px-6 py-3 rounded-full hover:bg-[#aefc48]  hover:drop-shadow-md">Visit 1MG</a>
+			<a href="/1mg" class="bg-lime-500 text-white px-6 py-3 rounded-full hover:bg-[#aefc48]  hover:drop-shadow-md md:text-2xl">Visit 1MG</a>
 		</div>
 
 		<!-- Remedium -->
 		<div class="bg-[#C1FF71] rounded-2xl p-8 text-center">
 			<Image src={untitled} alt="Remedium Logo" class="mx-auto mb-4" />
-			<a href="#" class="bg-lime-500 text-white px-6 py-3 rounded-full hover:bg-[#aefc48] hover:drop-shadow-md">Visit Store</a>
+			<a href="/remedium" class="bg-lime-500 text-white px-6 py-3 rounded-full hover:bg-[#aefc48] hover:drop-shadow-md md:text-2xl">Visit Store</a>
 		</div>
 	</div>
   </section>
   <section class=" bg-white mb-10">
-	<div class="mx-10">
-	<h1 class="text-6xl text-center font-bold py-5">Press Coverage</h1>
+	<div class="mx-10 md:m-0">
+	<h1 class="text-4xl md:text-6xl text-center font-bold py-5">Press Coverage</h1>
 	<div class="inline-flex items-center justify-center flex-wrap w-[100%] m-4 p-2">
 		<Image src={business} alt="bsLogo" class="m-4"/>
 		<Image src={cnbc} alt="bsLogo" class="m-4"/>
@@ -222,51 +224,51 @@ const optimizedBackground = await getImage({src: imageWorks, format: 'webp'});
 	</div>
   </section>
 
-    <!-- formbold Form -->
+    <!-- Subscribe Form -->
 	<section class="bg-gray-100 flex items-center justify-center">
-			<div class="bg-white p-6 rounded-lg shadow-md w-full max-w-4xl">
-				<h2 class="text-6xl font-bold text-center mb-8">Subscribe to our Newsletter</h2>
-				<form action="https://formbold.com/s/91pkA" method="POST">
-					<div class="mb-4">
-						<label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email Address:</label>
-						<input 
-							type="email" 
-							id="email" 
-							name="email" 
-							placeholder="Enter your email" 
-							required 
-							class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400"
-						/>
-					</div>
-					<button 
-						type="submit" 
-						class="w-full bg-green-500 text-white font-semibold py-2 rounded-lg hover:bg-green-700 transition-colors duration-300"
-					>
-						Subscribe
-					</button>
-				</form>
-			</div>
-		</section>
+		<div class="bg-white p-6 rounded-lg shadow-md w-full max-w-4xl">
+			<h2 class="text-4xl md:text-6xl font-bold text-center mb-8">Subscribe to our Newsletter</h2>
+			<form action="https://formbold.com/s/91pkA" method="POST" name="Subscribe with email form">
+				<div class="mb-4">
+					<label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email Address:</label>
+					<input 
+						type="email" 
+						id="email" 
+						name="email" 
+						placeholder="Enter your email" 
+						required 
+						class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400"
+					/>
+				</div>
+				<button 
+					type="submit" 
+					class="w-full bg-green-500 text-white font-semibold py-2 rounded-lg hover:bg-green-700 transition-colors duration-300"
+				>
+					Subscribe
+				</button>
+			</form>
+		</div>
+	</section>
 
-  <section class="text-center py-12">
-	<h1 class="text-6xl font-bold">Contact Us</h1>
-	<div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+  <section class="py-12">
+	<h1 class="text-4xl md:text-6xl font-bold text-center">Contact Us</h1>
+	<div class="text-left mt-8 grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl md:max-w-full mx-5">
 		<!-- Phone -->
 		<div class="bg-white rounded-3xl p-6 shadow-md">
-			<h2 class="font-bold text-xl">Phone</h2>
-			<p class="text-green-500 mt-2">+91 73583 14777</p>
+			<h2 class="font-bold text-lg md:text-3xl">Phone</h2>
+			<p class="text-green-500 mt-2 md:text-2xl">+91 73583 14777</p>
 		</div>
 
 		<!-- Email -->
 		<div class="bg-white rounded-3xl p-6 shadow-md">
-			<h2 class="font-bold text-xl">Email</h2>
-			<p class="text-green-500 mt-2">info@remediumtherapeutics.com</p>
+			<h2 class="font-bold text-lg md:text-3xl">Email</h2>
+			<p class="text-green-500 mt-2 md:text-2xl">info@remediumtherapeutics.com</p>
 		</div>
 
 		<!-- Address -->
 		<div class="bg-white rounded-3xl p-6 shadow-md">
-			<h2 class="font-bold text-xl">Address</h2>
-			<p class="mt-2">
+			<h2 class="font-bold text-lg md:text-3xl">Address</h2>
+			<p class="mt-2 md:text-2xl">
 				Remedium Therapeutics Private Limited<br>
 				Ticel Biopark Ltd Phase 2, First Floor<br>
 				5, CSIR Main Road,<br>
@@ -276,14 +278,14 @@ const optimizedBackground = await getImage({src: imageWorks, format: 'webp'});
 
 		<!-- Working Hours -->
 		<div class="bg-white rounded-3xl p-6 shadow-md">
-			<h2 class="font-bold text-xl">Working Hours</h2>
-			<p>Mon 9:00 - 18:00</p>
-			<p>Tue 9:00 - 18:00</p>
-			<p>Wed 9:00 - 18:00</p>
-			<p>Thu 9:00 - 18:00</p>
-			<p>Fri 9:00 - 18:00</p>
-			<p>Sat 9:00 - 18:00</p>
-			<p>Sun 9:00 - 18:00</p>
+			<h2 class="font-bold text-lg md:text-3xl">Working Hours</h2>
+			<pre>Mon 9:00 - 18:00</pre>
+			<pre>Tue 9:00 - 18:00</pre>
+			<pre>Wed 9:00 - 18:00</pre>
+			<pre>Thu 9:00 - 18:00</pre>
+			<pre>Fri 9:00 - 18:00</pre>
+			<pre>Sat 9:00 - 18:00</pre>
+			<pre>Sun 9:00 - 18:00</pre>
 		</div>
 	</div>
   </section>
