@@ -26,7 +26,7 @@ const optimizedBackground = await getImage({src: imageWorks, format: 'webp', qua
   <section class="hero bg-cover bg-center " style={`background-image: url(${optimizedBackground.src});`}>
 	<div class="h-screen flex items-center justify-center  bg-black/70">
 		<div class="text-center md:w-[66%]" style="min-width: 50%;">
-			<h1 class="text-5xl md:text-7xl font-bold text-white m-8 px-10 ">Experience Relief with Coroquil-Zn</h1>
+			<h1 class="text-5xl md:text-7xl font-bold text-white mt-8 mb-8 px-10 ">Experience Relief with Coroquil-Zn</h1>
 			<p class="text-lg md:text-2xl text-white px-10 mb-8">Boost Your Immunity with Our Innovative Zinc-Based Formula</p>
 			<a href="/Discover" class="inline-flex items-center justify-center text-[#645600] bg-[#FFF197] rounded-full p-3 text-lg md:text-2xl font-bold border-solid border-2 border-yellow-500 hover: cursor-pointer ">Discover COROQUIL-Zn</a>
 		</div>
@@ -47,7 +47,7 @@ const optimizedBackground = await getImage({src: imageWorks, format: 'webp', qua
   <section class="bg-gray-100 flex items-center justify-center ">
 	<div class="relative w-full max-w-3xl m-auto overflow-hidden">
 	  <!-- Slideshow Container -->
-	  <div class="slideshow-container relative w-full h-120">
+	  <div class="slideshow-container relative w-full h-[30vh] md:h-[50vh]">
 		<!-- Slide Images -->
 		<div class="mySlides fade hidden">
 		  <Image src={slide1} quality={55} alt="A description of pruduct1." class="w-full h-full object-cover" />
@@ -67,8 +67,8 @@ const optimizedBackground = await getImage({src: imageWorks, format: 'webp', qua
 	  </div>
 	
 	  <!-- Navigation Buttons -->
-	  <a class="prev absolute left-0 top-1/2 transform -translate-y-1/2 text-2xl text-white cursor-pointer">❮</a>
-	  <a class="next absolute right-0 top-1/2 transform -translate-y-1/2 text-2xl text-white cursor-pointer">❯</a>
+	  <a class="prev absolute left-0 top-1/2 transform -translate-y-1/2 text-3xl text-[#2e481a] cursor-pointer bg-white">❮</a>
+	  <a class="next absolute right-0 top-1/2 transform -translate-y-1/2 text-3xl text-[#2e481a] cursor-pointer bg-white">❯</a>
 	</div>
   
 	<!-- Add Slideshow Script -->
@@ -184,9 +184,9 @@ const optimizedBackground = await getImage({src: imageWorks, format: 'webp', qua
 	</div>
   </section>
   <section class="my-10">
-	<div class="text-center mx-5 md:mx-36">
-		<h1 class="text-4xl md:text-6xl font-bold mb-5">Where to Buy COROQUIL-Zn</h1>
-		<p class="text-lg md:text-2xl">
+	<div class="mx-5 md:mx-36">
+		<h1 class="text-4xl text-left md:text-center md:text-6xl font-bold mb-5">Where to Buy COROQUIL-Zn</h1>
+		<p class="text-left md:text-center text-lg md:text-2xl">
 			You can purchase COROQUIL-Zn directly from our online store or find it at any of our authorized retail partners. Available in pharmacies, health stores, and online retailers, COROQUIL-Zn is easily accessible wherever you are. Take the first step towards stronger immune health today!
 		</p>
 	</div>
@@ -227,10 +227,17 @@ const optimizedBackground = await getImage({src: imageWorks, format: 'webp', qua
     <!-- Subscribe Form -->
 	<section class="bg-gray-100 flex items-center justify-center">
 		<div class="bg-white p-6 rounded-lg shadow-md w-full max-w-4xl">
-			<h2 class="text-4xl md:text-6xl font-bold text-center mb-8">Subscribe to our Newsletter</h2>
-			<form action="https://formbold.com/s/91pkA" method="POST" name="Subscribe with email form">
+			<h2 class="text-4xl md:text-6xl font-bold text-left md:text-center mb-8">Subscribe to our Newsletter</h2>
+			<form action="https://formsubmit.co/96bb0843b75f159cacd192be81dbbf60" method="POST" name="Subscribe with email form">
 				<div class="mb-4">
-					<label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email Address:</label>
+					<label for="name" class="block text-gray-700 text-sm font-bold mt-2">Full Name:</label>
+					<input 
+						type="text"  
+						name="name" 
+						placeholder="Enter your full name"
+						class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400"
+					/>
+					<label for="email" class="block text-gray-700 text-sm font-bold mt-4">Email Address*:</label>
 					<input 
 						type="email" 
 						id="email" 
@@ -239,7 +246,17 @@ const optimizedBackground = await getImage({src: imageWorks, format: 'webp', qua
 						required 
 						class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400"
 					/>
+					<label for="number" class="block text-gray-700 text-sm font-bold mt-4">Phone Number:</label>
+					<input 
+						type="tel"  
+						name="phone" 
+						placeholder="999 999 9999"
+						minlength="10"
+  						maxlength="10"
+						class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400"
+					/>
 				</div>
+				<input type="hidden" name="_captcha" value="false" />
 				<button 
 					type="submit" 
 					class="w-full bg-green-500 text-white font-semibold py-2 rounded-lg hover:bg-green-700 transition-colors duration-300"
@@ -250,9 +267,9 @@ const optimizedBackground = await getImage({src: imageWorks, format: 'webp', qua
 		</div>
 	</section>
 
-  <section class="py-12">
-	<h1 class="text-4xl md:text-6xl font-bold text-center">Contact Us</h1>
-	<div class="text-left mt-8 grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl md:max-w-full mx-5">
+  <section class="py-12 mx-5">
+	<h1 class="text-4xl md:text-6xl font-bold text-left md:text-center">Contact Us</h1>
+	<div class="text-left mt-8 grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl md:max-w-full">
 		<!-- Phone -->
 		<div class="bg-white rounded-3xl p-6 shadow-md">
 			<h2 class="font-bold text-lg md:text-3xl">Phone</h2>
